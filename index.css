@@ -1,0 +1,216 @@
+/*font-family: 'Lexend Deca', sans-serif;
+font-family: 'Secular One', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  --gradient-color: linear-gradient(
+    60deg,
+    rgba(153, 60, 149, 1) 8%,
+    rgba(183, 55, 117, 1) 20%,
+    rgba(184, 55, 116, 1) 40%,
+    rgba(241, 46, 55, 1) 79%,
+    rgba(252, 148, 73, 1) 100%
+  );
+  --bg-color: #161616;
+  --gradient-border: linear-gradient(
+    90deg,
+    rgba(119, 67, 138, 1) 19%,
+    rgba(187, 93, 122, 1) 45%,
+    rgba(141, 68, 26, 1) 100%
+  );
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  height: 90vh;
+}
+
+header {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 64px 0px 64px;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+a {
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+}
+
+#main-text {
+  margin: 3rem 0 3.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-text h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+#main-text p {
+  color: #717171;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+}
+#form-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+#prop-sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#prop-sign-in input {
+  height: 3.5rem;
+  width: 22rem;
+  border-radius: 5px;
+  background-color: #222222;
+  border: 1px inset #7171711a;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  padding-left: 1.2rem;
+  color: white;
+}
+#prop-sign-in input::placeholder {
+  color: #717171;
+  font-size: 0.9rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+#prop-sign-in input:hover {
+  border: 1px inset #ffffff;
+}
+#prop-sign-in button {
+  height: 3.5rem;
+  width: 22rem;
+  border-radius: 5px;
+  background: rgb(153, 60, 149);
+  background: var(--gradient-color);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding-left: 1.2rem;
+  padding-right: 1.6rem;
+  text-align: left;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#prop-sign-in button:hover {
+  border: 1px inset white;
+  margin: -2px;
+}
+
+#prop-sign-in button img {
+  height: 1.6rem;
+}
+
+#oauth-sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#oauth-sign-in button {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  gap: 20px;
+  height: 3.5rem;
+  width: 22rem;
+  border-radius: 5px;
+  background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+    var(--gradient-border) border-box;
+  border: 1px solid transparent;
+  font-family: "Lexend Deca", sans-serif;
+  padding-left: 1.2rem;
+  color: white;
+}
+#oauth-sign-in button:hover {
+  border: 1px inset white;
+}
+#oauth-sign-in #facebook {
+  background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+    linear-gradient(
+        270deg,
+        rgba(119, 67, 138, 1) 19%,
+        rgba(187, 93, 122, 1) 45%,
+        rgba(141, 68, 26, 1) 100%
+      )
+      border-box;
+}
+#oauth-sign-in button img {
+  height: 1.5rem;
+}
+
+#forgot-pass {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0px 150px 50px 150px;
+}
+
+footer p {
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
+  color: #717171;
+}
+
+footer a {
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
+  color: #717171;
+}
