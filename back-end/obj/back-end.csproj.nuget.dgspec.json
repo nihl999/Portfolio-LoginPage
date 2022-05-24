@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "W:\\Portfolio\\LoginPage\\back-end\\back-end.csproj": {}
+    "D:\\Dev\\Portfolio\\LoginPage\\back-end\\back-end.csproj": {}
   },
   "projects": {
-    "W:\\Portfolio\\LoginPage\\back-end\\back-end.csproj": {
+    "D:\\Dev\\Portfolio\\LoginPage\\back-end\\back-end.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\Portfolio\\LoginPage\\back-end\\back-end.csproj",
+        "projectUniqueName": "D:\\Dev\\Portfolio\\LoginPage\\back-end\\back-end.csproj",
         "projectName": "back-end",
-        "projectPath": "W:\\Portfolio\\LoginPage\\back-end\\back-end.csproj",
+        "projectPath": "D:\\Dev\\Portfolio\\LoginPage\\back-end\\back-end.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "W:\\Portfolio\\LoginPage\\back-end\\obj\\",
+        "outputPath": "D:\\Dev\\Portfolio\\LoginPage\\back-end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,9 +38,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.17.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
