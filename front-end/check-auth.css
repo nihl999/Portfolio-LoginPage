@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  --gradient-color: linear-gradient(
+    60deg,
+    rgba(153, 60, 149, 1) 8%,
+    rgba(183, 55, 117, 1) 20%,
+    rgba(184, 55, 116, 1) 40%,
+    rgba(241, 46, 55, 1) 79%,
+    rgba(252, 148, 73, 1) 100%
+  );
+  --bg-color: #161616;
+  --gradient-border: linear-gradient(
+    90deg,
+    rgba(119, 67, 138, 1) 19%,
+    rgba(187, 93, 122, 1) 45%,
+    rgba(141, 68, 26, 1) 100%
+  );
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  height: 90vh;
+}
+
+header {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 64px 0px 64px;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+a {
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  margin-top: 12rem;
+}
+
+#test-holder {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.single-test {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.single-test h2 {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.test-auth {
+  height: 3rem;
+  width: 19rem;
+  border-radius: 5px;
+  background-color: #222222;
+  border: 1px inset #7171711a;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  padding-left: 1.2rem;
+  color: #717171;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.test-auth:hover {
+  border: 1px solid rgb(77, 76, 76);
+  background-color: white;
+  color: #222222;
+}
+
+.green-hover:hover {
+  border: 1px solid rgb(33, 78, 53);
+  background-color: rgb(0, 116, 0);
+  color: white;
+}

@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test token claims</title>
+    <link rel="stylesheet" href="check-auth.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <h4>Drift.io</h4>
+        <nav>
+          <a target="_blank" href="#"> Portfolio (In Development)</a>
+          <a target="_blank" href="https://www.linkedin.com/in/nihl999-lorhan/">
+            Linkedin</a
+          >
+          <a target="_blank" href="https://github.com/nihl999"> Github</a>
+          <a target="_blank" href="https://dribbble.com/shots/15785941-Login-UI">
+            Original Design</a
+          >
+        </nav>
+      </header>
+      <main>
+          <div id="test-holder">
+              <div class="single-test">
+                  <h2>You <p>CAN </p>use anonymous pages</h2>
+                  <button class="test-auth" name="anon" onclick="sendCheck(event)">Anonymous</button></div>
+              <div class="single-test">
+                <h2>You <p>CAN</p> use normal user pages</h2>  
+                <button class="test-auth" name="normal" onclick="sendCheck(event)">Normal User</button></div>
+              <div class="single-test">
+                <h2>You <p>CAN</p> use administrator pages</h2>  
+                <button class="test-auth" name="admin" onclick="sendCheck(event)">Administrator</button></div>
+              <div class="single-test">
+                <h2>You <p>ARE</p> social logged</h2>
+                  <button class="test-auth" name="social" onclick="sendCheck(event)">Social User</button></div>
+          </div>
+      </main>
+    </header>
+    <script src="src/checkAuth.js"></script>
+  </body>
+</html>
