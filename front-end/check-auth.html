@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class>
     <header>
         <h4>Drift.io</h4>
         <nav>
@@ -27,6 +27,7 @@
         </nav>
       </header>
       <main>
+        <div id="popup" class="element-transparent preload"></div>
           <div id="test-holder">
               <div class="single-test">
                   <h2>You <p>CAN </p>use anonymous pages</h2>
@@ -38,9 +39,10 @@
                 <h2>You <p>CAN</p> use administrator pages</h2>  
                 <button class="test-auth" name="admin" onclick="sendCheck(event)">Administrator</button></div>
               <div class="single-test">
-                <h2>You <p>ARE</p> social logged</h2>
+                <h2>You <p>ARE</p> socialy logged in</h2>
                   <button class="test-auth" name="social" onclick="sendCheck(event)">Social User</button></div>
           </div>
+          <div><img id="load-image" class="element-transparent preload" src="images/loading.svg" alt="loading icon"></div>
       </main>
     </header>
     <script src="src/checkAuth.js"></script>

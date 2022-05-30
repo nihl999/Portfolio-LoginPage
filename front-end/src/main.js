@@ -111,6 +111,7 @@ function init() {
     let response = await fetch(postRequest);
     return response;
   }
+
   async function loginEventListener(event) {
     event.preventDefault();
     let validEmail = validateEmail({ currentTarget: emailInput });
@@ -118,8 +119,13 @@ function init() {
     if (!validEmail || !validPassword) return;
     let response = await sendLoginRequest();
     if (response) response = await response.json();
-    if (response.response.token != undefined)
+    if (response.response.token != undefined) {
       saveTokenLocal(response.response.token, "@loginpage/token");
+      submitButton.animate([{ opacity: 0 }, { opacity: 1 }], 500);
+      submitButton.classList.add("success-button");
+      submitButton.innerText = "Logged in with success!";
+      setTimeout(() => (window.location.href = "../check-auth.html"), 2000);
+    }
     console.log(response);
   }
   async function registerEventListener(event) {

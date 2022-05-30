@@ -141,6 +141,10 @@ main {
   transition: background 0.5s ease-in-out;
 }
 
+.success-button {
+  background: rgb(114, 177, 20) !important;
+}
+
 #prop-sign-in button:hover {
   border: 1px solid white;
 }
